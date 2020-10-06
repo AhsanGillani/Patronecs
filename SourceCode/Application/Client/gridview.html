@@ -1,83 +1,280 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<title>W3.CSS Template</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://kit.fontawesome.com/8848b4e6e2.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style.css">
-<title>Patronecs</title>
-</head>
-<body>
- 
-  <h2>List View or Grid View</h2>
+<style>
+html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+* {
+  box-sizing: border-box;
+}
 
-  <p>Click on a button to choose list view or grid view.</p>
-  
-  <div id="btnContainer">
-    <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
-    <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  /* width: 50%; */
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+<body class="">
+
+<!-- Top container -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <a class="navbar-brand" href="#">PATRONECS</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Feeds</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Leads</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Zoho Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Zoho Expense</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">AccountsRN</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Potentials</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      
+    </ul>
+    <form class="form-inline my-2  my-lg-0">
+      <i class="fa fa-search" style="font-size:22px;"></i>
+      <i class='fas fa-gamepad' style='font-size:22px'></i>
+      <i class="fa fa-bell-o" style="font-size:22px"></i>
+      <i class="fa fa-calendar-check-o" style="font-size:22px"></i>
+      <i class="fa fa-plus" style="font-size:22px"></i>
+      <i class='fas fa-tools' style='font-size:22px'></i>
+    </form>
   </div>
-  <br>
-  
-  <div class="row">
-    <div class="column" style="background-color:#aaa;">
-      <h2>Column 1</h2>
-      <p>Some text..</p>
-    </div>
-    <div class="column" style="background-color:#bbb;">
-      <h2>Column 2</h2>
-      <p>Some text..</p>
+</nav>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container w3-row">
+    
+    <div class="w3-col s8 w3-bar">
+     <h3>Education Management</h3>
     </div>
   </div>
-  
-  <div class="row">
-    <div class="column" style="background-color:#ccc;">
-      <h2>Column 3</h2>
-      <p>Some text..</p>
-    </div>
-    <div class="column" style="background-color:#ddd;">
-      <h2>Column 4</h2>
-      <p>Some text..</p>
-    </div>
+  <hr>
+  <div class="w3-container">
+    <h5>Dashboard</h5>
   </div>
+  <div class="w3-bar-block">
+    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-users fa-fw"></i>  Admin Data</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-eye fa-fw"></i>  Databases</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Timetable</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bullseye fa-fw"></i> Students</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bell fa-fw"></i>  News</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bank fa-fw"></i>  General</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
+  </div>
+</nav>
+
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:350px; margin-right:60px; margin-top:43px;">
+
+  <!-- Header -->
+  <h2>Student Details</h2>
+
+
+
+<div id="btnContainer">
+  <button class="btn" onclick="listView()"><i class="fa fa-bars"></i> List</button> 
+  <button class="btn active" onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+</div>
+<br>
+<div class="row">
+  <div class="column" >
+<table>
+  <tbody>
+    <tr>
+      <th>Register Number</th>
+      <th>Name</th>
+      <th>Photo</th>
+      <th>Email</th>
+      <th>Conntact Number</th>
+      <th>Detail</th>
+    </tr>
+   
+</div>
+</div>
+
+  <div >
+    <tr>
+      <td>12345</td>
+      <td>zia</td>
+      <td>Photo.jpg</td>
+      <td>zia@gmail.com</td>
+      <td>03249746191</td>
+      <td><a href="contact.html"><button class="detailbtn">VIEW</button></a></td>
+    </tr>
+  </div>
+  <div >
+    <tr>
+      <td>12345</td>
+      <td>zia</td>
+      <td>Photo.jpg</td>
+      <td>zia@gmail.com</td>
+      <td>03249746191</td>
+      <td><a href="contact.html"><button class="detailbtn">VIEW</button></a></td>
+    </tr>
+  </div>
+</div>
+
+
+  <div>
+    <tr>
+      <td>12345</td>
+      <td>zia</td>
+      <td>Photo.jpg</td>
+      <td>zia@gmail.com</td>
+      <td>03249746191</td>
+      <td><a href="contact.html"><button class="detailbtn">VIEW</button></a></td>
+    </tr>
+  </div>
+
+  <div >
+    <tr>
+      <td>12345</td>
+      <td>zia</td>
+      <td>Photo.jpg</td>
+      <td>zia@gmail.com</td>
+      <td>03249746191</td>
+      <td><a href="contact.html"><button class="detailbtn">VIEW</button></a></td>
+    </tr>
   
-  <script>
-  // Get the elements with class="column"
-  var elements = document.getElementsByClassName("column");
-  
-  // Declare a loop variable
-  var i;
-  
-  // List View
-  function listView() {
-    for (i = 0; i < elements.length; i++) {
-      elements[i].style.width = "100%";
-    }
+</div>
+
+</tbody>
+</table>
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
   }
-  
-  // Grid View
-  function gridView() {
-    for (i = 0; i < elements.length; i++) {
-      elements[i].style.width = "50%";
-    }
+}
+
+// Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
   }
-  
-  /* Optional: Add active class to the current button (highlight it) */
-  var container = document.getElementById("btnContainer");
-  var btns = container.getElementsByClassName("btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function() {
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
+}
+
+/* Optional: Add active class to the current button (highlight it) */
+var container = document.getElementById("btnContainer");
+var btns = container.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+
+  <!-- End page content -->
+</div>
+
+<script>
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+    overlayBg.style.display = "none";
+  } else {
+    mySidebar.style.display = 'block';
+    overlayBg.style.display = "block";
   }
-  </script>
-  
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+  mySidebar.style.display = "none";
+  overlayBg.style.display = "none";
+}
+</script>
+
 </body>
 </html>
