@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/8848b4e6e2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="style.css">
+<title>Patronecs</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">PATRONECS</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Feeds</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Leads</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Zoho Books</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Zoho Expense</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AccountsRN</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Potentials</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-ellipsis-h"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </li>
+            
+          </ul>
+          <form class="form-inline my-2  my-lg-0">
+            <i class="fa fa-search" style="font-size:22px;"></i>
+            <i class='fas fa-gamepad' style='font-size:22px'></i>
+            <i class="fa fa-bell-o" style="font-size:22px"></i>
+            <i class="fa fa-calendar-check-o" style="font-size:22px"></i>
+            <i class="fa fa-plus" style="font-size:22px"></i>
+            <i class='fas fa-tools' style='font-size:22px'></i>
+          </form>
+        </div>
+      </nav>
+      <div class="container-fluid Contcat-Section">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12">
+        <h1>Create Contact</h1>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12">
+        <form class="form-inline formbtns" >
+          <button type="button" id="savebtn"class="btn btn-outline-primary">Save</button>
+          <button type="button" id="savebtn" class="btn btn-outline-primary">Save and New</button>
+          <button type="button" id="savebtn" class="btn btn-outline-primary">Cancel</button>
+        </form>
+      </div>
+      </div>
+      </div>
+      <div class="container-fluid contact-form">
+        <form>
+          <h1>Contact Information</h1>
+          <div class="form-row">
+            
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Contact">Contact Owner:</label>
+              <input type="tel" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="fname">Lead Source:</label>
+              <input type="text" class="form-control" placeholder="None">
+            </div>
+
+          
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="fname">First Name:</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Lname">Last Name:</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Account RN">AccountRN Name:</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Vender Name">Vender Name:</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" placeholder="name@gmail.com">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Department">Department:</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="phone">Title:</label>
+              <input type="Text" class="form-control" placeholder="Mr.">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="phone">Home Phone:</label>
+              <input type="tel" class="form-control" placeholder="+1234567890">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="phone">Phone:</label>
+              <input type="tel" class="form-control" placeholder="+1234567890">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="fax">Fax:</label>
+              <input type="text" class="form-control" placeholder="">
+            </div>
+          
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="phone">Other Phone:</label>
+              <input type="tel" class="form-control" placeholder="+1234567890">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="DOB">Date of Birth:</label>
+              <input type="date" class="form-control" name="Date of Birth" value="Date of Birth" placeholder="">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Mobile">Mobile:</label>
+              <input type="tel" class="form-control" placeholder="+123456789">
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="email">Email Opt Out:</label>
+              <input disabled="true" class="form-control style" placeholder="Email Opt Out">
+                <input type="checkbox" />
+                <span></span>
+              </label>
+           
+            </div>  
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="email">Is Primary Contact:</label>
+              <input disabled="true" class="form-control style" placeholder="Is Primary Contact">
+                <input type="checkbox" />
+                <span></span>
+              </label>
+           
+            </div>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Secondary email">Secondary Email:</label>
+              <input type="email" class="form-control" placeholder="name@gmail.com">
+            </div>  
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Reports">Reprts To:</label>
+              <input type="email" class="form-control" placeholder="name@gmail.com">
+            </div> 
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Twitter">Twitter:</label>
+              <input type="email" class="form-control" placeholder="@">
+            </div> 
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Skype ID">Skype Id:</label>
+              <input type="text" class="form-control" placeholder="">
+            </div> 
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <label for="Exchange Rate">Exchange Rate:</label>
+              <input type="number" class="form-control" placeholder="100000">
+            </div> 
+          </div>
+        </form>
+    </div>
+  </body>
+</html>
